@@ -1,9 +1,11 @@
 dependencies:
 - name: mariadb
   version: ~7.1.0
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  #repository: https://github.com/DoGab/charts/tree/master
+  repository: "file:///home/dominic/github/charts/bitnami"
   condition: mariadb.enabled
 - name: redis
   version: ~10.0.1
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  #repository: https://github.com/DoGab/charts/tree/master
+  repository: "file:///home/dominic/github/charts/bitnami"
   condition: redis.enabled
